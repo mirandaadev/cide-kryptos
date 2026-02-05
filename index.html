@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Página web dedicada a encriptar y desencriptar texto en mayúsculas y/o minúsculas.">
+    <meta name="keyword"
+        content="cifrar, encriptar, desencriptar, mensaje oculto, secreto, CIDE, cide, ci, de, oculto, mensaje">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <script src="js/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.18/dist/sweetalert2.all.min.js"></script>
+    <title>CIDE</title>
+</head>
+
+<body>
+    <main id="principal">
+        <section id="primSecc">
+            <textarea name="Entrada" id="areaTxt" placeholder="Texto..."></textarea>
+            <!-- <figure>
+                <img src="img/alerta.webp" alt="alerta" width="16px">
+            </figure>
+            -->
+            <footer class="contBtns">
+                <button class="btn" id="btnEncrip">Encriptar</button>
+                <button class="btn" id="btnDecrip">Desencriptar</button>
+            </footer>
+        </section>
+        <section class="segSecc">
+            <div class="flotante" id="flotante">
+                <p id="resTxt"></p>
+                <figure id="imgFlotante">
+                    <img id="muñeco" src="img/Muñeco.svg" alt="Personaje CIDE">
+                </figure>
+                <p id="primTxt"><span class="bold">Ningún mensaje fue encontrado</span></p>
+                <p id="segTxt"><span class="subTxt">Ingresa el texto que desees encriptar o desencriptar</span></p>
+                <button class="btn" id="btnCopiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
