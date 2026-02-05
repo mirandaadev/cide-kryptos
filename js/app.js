@@ -12,16 +12,20 @@ let encrip = () => {
     return;
   }
 
-  let vocales = {
+  let letras = {
     a: "bora",
     e: "tiru",
     i: "ins",
     o: "lai",
     u: "peli",
+    h: "you",
+    j: "asi",
+    z: "falla",
+    x: "dar",
   };
 
-  let textoEncrip = textoEntrada.replace(/[aeiou]/gi, (remplazarVocales) => {
-    return vocales[remplazarVocales.toLowerCase()];
+  let textoEncrip = textoEntrada.replace(/[aeiouhjzx]/gi, (remplazarLetras) => {
+    return letras[remplazarLetras.toLowerCase()];
   });
   copTxt = textoEncrip;
   actualizarDOM(textoEncrip);
@@ -34,18 +38,22 @@ let decrip = () => {
     return;
   }
 
-  let rempVocales = {
+  let rempLetras = {
     bora: "a",
     tiru: "e",
     ins: "i",
     lai: "o",
     peli: "u",
+    you: "h",
+    asi: "j",
+    falla: "z",
+    dar: "x",
   };
 
   let textoDecrip = textoEntrada.replace(
-    /(bora|tiru|ins|lai|peli)/gi,
-    (remplazarVocales) => {
-      return rempVocales[remplazarVocales.toLowerCase()];
+    /(bora|tiru|ins|lai|peli|you|asi|falla|dar)/gi,
+    (remplazarLetras) => {
+      return rempLetras[remplazarLetras.toLowerCase()];
     }
   );
   copTxt = textoDecrip;
